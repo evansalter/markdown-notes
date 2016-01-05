@@ -1,6 +1,8 @@
 # Markdown Notes
 
-Quick and dirty markdown note workflow.
+## Dependencies
+
+- Pandoc
 
 ## Uses
 
