@@ -43,7 +43,7 @@ Once you have initialized a `notes` directory using `init_notes.sh`, you can beg
 I have the following shell function sourced in my shell to easily create a new Markdown file with the current date as the filename and the first line of the file:
 
 ```
-newnote() {
+note() {
 	FILE="`date +%Y-%m-%d`.md"
 	DATE="`date +"%A, %B %d, %Y"`"
 	if [ -f $FILE ];
