@@ -11,5 +11,5 @@ if [ ! -d img ]; then
 	touch img/index
 fi
 if [ ! -f makefile ]; then
-	ln -s ~/dev/notes/makefile .
+	ln -s makefile .
 fi
