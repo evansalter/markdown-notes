@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- Pandoc
+- [Pandoc](https://github.com/jgm/pandoc)
 
 ## Uses
 
@@ -33,7 +33,7 @@ This will create the following structure:
 
 Once you have initialized a `notes` directory using `init_notes.sh`, you can begin writing notes:
 
-- Create notes in 'notes' directory
+- Create notes in `notes` directory
 - Place images in the `img` directory
 - To create PDFs, run `make` in the `notes` directory.  This will create a `PDFs` directory (if it doesn't exist).
 	- Individual PDFs for each `.md` file in `notes` will be created, as well as `all_notes.pdf` which is a concatenation of each `.md` file with a table of contents.
@@ -48,10 +48,10 @@ note() {
 	DATE="`date +"%A, %B %d, %Y"`"
 	if [ -f $FILE ];
 	then
-		vim $FILE
+		$EDITOR $FILE
 	else
 		echo "# $DATE" >> $FILE
-		vim $FILE
+		$EDITOR $FILE
 	fi
 }
 ```
