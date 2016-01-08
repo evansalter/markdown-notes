@@ -11,5 +11,5 @@ if [ ! -d img ]; then
 	touch img/index
 fi
 if [ ! -f makefile ]; then
-	ln -s makefile .
+	ln -s `dirname $0`/makefile .
 fi
